@@ -124,6 +124,16 @@ jobs:
         git fetch --all --tags --force
         shards install  
         echo "RUNNER: $RUNNER_NAME"
+    - name: Setup tmate session
+      env:
+        FALCO_ENV: CI
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        DOCKERHUB_USERNAMES: ${{ secrets.DOCKERHUB_USERNAMES }}
+        DOCKERHUB_PASSWORDS: ${{ secrets.DOCKERHUB_PASSWORDS }}
+        DOCKERHUB_EMAIL: ${{ secrets.DOCKERHUB_EMAIL }}
+        IMAGE_REPO: ${{ secrets.IMAGE_REPO }}
+      uses: mxschmitt/action-tmate@v3
+
     - name: Run Crystal Spec
       env:
         FALCO_ENV: CI
