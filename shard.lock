@@ -8,6 +8,10 @@ shards:
     git: https://github.com/crystal-ameba/ameba.git
     version: 0.14.4
 
+  cluster_tools:
+    git: https://github.com/cnf-testsuite/cluster_tools.git
+    version: 0.1.0+git.commit.9ac57afc9fd583e567f1d1174838323db43f1e20
+
   commander:
     git: https://github.com/mrrooijen/commander.git
     version: 0.4.0
@@ -36,13 +40,13 @@ shards:
     git: https://github.com/crystal-community/icr.git
     version: 0.9.0+git.commit.f62bfcdfbe65ee31c46c3d9951cee08ac2e0bee0
 
+  kernel_introspection:
+    path: ../kernel_introspection
+    version: 0.1.0
+
   kubectl_client:
     git: https://github.com/cnf-testsuite/kubectl_client.git
     version: 0.1.0+git.commit.12cad24a372469e34e0f64019b10e1b3dc82a124
-  
-  cluster_tools:
-    git: https://github.com/cnf-testsuite/cluster_tools.git
-    version: 0.1.0+git.commit.9ac57afc9fd583e567f1d1174838323db43f1e20
 
   popcorn:
     git: https://github.com/icyleaf/popcorn.git

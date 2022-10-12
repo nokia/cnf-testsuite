@@ -7,6 +7,7 @@ require "../utils/utils.cr"
 require "docker_client"
 require "halite"
 require "totem"
+require "kernel_introspection"
 
 desc "The CNF test suite checks to see if CNFs follows microservice principles"
 task "microservice", ["reasonable_image_size", "reasonable_startup_time", "single_process_type", "service_discovery", "shared_database"] do |_, args|
